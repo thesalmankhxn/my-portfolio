@@ -1,0 +1,100 @@
+.about {
+    background-color: $bodyBg;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+
+    .heading {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10%;
+        font-size: 24px;
+        line-height: 50px;
+        color: $accent;
+    }
+
+    .about-pic {
+        margin: auto;
+        height: 127px;
+    }
+
+    .iamSK77 {
+        font-family: $fontHeading;
+        font-size: 30px;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        color: #fff;
+    }
+
+    .line {
+        margin-top: 20px;
+        width: 65px;
+        height: 3px;
+        background-color: $accent;
+        border: 1px solid $accent;
+        margin: auto;
+    }
+
+    .bio {
+        margin-top: 32px;
+        font-family: $fontBody;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 32px;
+    }
+
+    @include breakpoint (large) {
+
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .heading {
+            position: absolute;
+            top: calc(100vh + 10%);
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+        }
+
+            .container {
+
+                padding: 128px 0;
+
+                margin-top: 10%;
+
+                .content {
+                    display: grid;
+                    grid-template-columns: 45% 1fr;
+                    align-items: center;
+                    max-width: 800px;
+
+                    .left {
+                        .about-pic {
+                            height: 200px;
+                        }
+                    }
+
+                    .right {
+                        text-align: left;
+
+                        .iamSK77 {
+                            margin-top: 0;
+                        }
+
+                        .line {
+                            float: left;
+                        }
+
+                        .bio {
+                            margin-top: 60px;
+                        }
+                    }
+                }
+            }
+    }
+}

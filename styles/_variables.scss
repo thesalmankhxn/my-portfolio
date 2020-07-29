@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@700&display=swap');
+
+// Fonts
+$fontHeading: 'Titillium Web';
+$fontBody: 'Roboto';
+
+
+// DARK
+// $lightBlack: #444;
+$lightBlack: #8d8d8d;
+$bodyBg: #1d1d1d;
+$navBg: #181818;
+$accent: #08fdd8;
+$accent-light: #6649b8;
+
+// Breakpoints
+$breakpoints: (
+    small: 499px,
+    medium: 699px,
+    large: 999px,
+    xlarge: 1399px
+);
+
+@mixin breakpoint($size){
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value){
+        @content;
+    }
+}

@@ -1,0 +1,136 @@
+.hero {
+    background-color: $bodyBg;
+    height: calc(100vh - 82px);
+    color: #fff;
+    text-align: left;
+    display: grid;
+    align-items: center;
+
+    .hero-image {
+        display: none;
+    }
+
+    h1 {
+        margin: 0;
+        font-family: $fontHeading;
+        font-weight: 700;
+        font-size: 40px;
+        // line-height: 50px;
+
+        span {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 35px;
+        }
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-family: $fontBody;
+        font-size: 11px;
+        letter-spacing: 3px;
+        color: $lightBlack;
+    }
+
+    button {
+        margin-top: 20px;
+        color: $accent;
+        background-color: transparent;
+        padding: 10px 15px;
+        font-size: 13px;
+        letter-spacing: 4px;
+        border: 2px solid $accent;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid $accent;
+            color: $bodyBg;
+            outline: none;
+            background-color: $accent;
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 100px;
+        height: 30px;
+        
+    }
+
+    @include breakpoint (medium) {
+
+        .hero-image {
+            display: none;
+        }
+
+        h1 {
+            font-size: 54px;
+
+            span {
+                font-size: 49px;
+            }
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .arrow {
+            height: 50px;
+        }
+    }
+
+    @include breakpoint (large) {
+
+        height: 100vh;
+
+        .content {
+
+            display: grid;
+            grid-template-columns: 1fr 40%;
+            
+
+            .hero-image {
+                display: block;
+                max-width: 85%;
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+    
+            h1 {
+                font-size: 73px;
+                line-height: 67px;
+                
+                span {
+                    font-size: 67px;
+                }
+            }
+    
+            h2 {
+                font-size: 14px;
+            }
+    
+            button {
+                max-width: 160px;
+            }
+    
+            .arrow {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 80px;
+                height: 50px;
+                
+            }
+        }
+
+        }
+
+        
+}
