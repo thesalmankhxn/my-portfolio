@@ -528,4 +528,26 @@ menu .mobile-menu .active {
     grid-column: 10/13;
   }
 }
+
+.portfolio {
+  height: 100vh;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.portfolio .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 112px 0;
+}
+
+.portfolio .container .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio .container .content .left .project-image {
+  height: 50vw;
+}
 /*# sourceMappingURL=style.css.map */

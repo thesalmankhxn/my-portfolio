@@ -1,0 +1,30 @@
+.portfolio {
+    height: 100vh;
+    background-color: $bodyBg;
+    color: #fff;
+
+    
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 112px 0;
+
+        .content {
+
+            display: flex;
+            flex-direction: column;
+
+            .h3 {
+                
+            }
+
+            .left {
+                .project-image {
+                    height: 50vw;
+                }
+            }
+        }
+    }
+}
