@@ -9,9 +9,8 @@
         text-align: center;
         padding-top: 30px;
         padding-bottom: 10%;
-        font-size: 24px;
         line-height: 50px;
-        color: $accent;
+        font-size: 2rem !important;
     }
 
     .about-pic {
@@ -58,7 +57,7 @@
             top: calc(100vh + 10%);
             left: 50%;
             transform: translateX(-50%);
-            font-size: 40px;
+            // font-size: 40px;
         }
 
             .container {

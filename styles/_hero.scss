@@ -15,11 +15,13 @@
         font-family: $fontHeading;
         font-weight: 700;
         font-size: 40px;
-        // line-height: 50px;
+        line-height: 52px;
 
         span {
             color: rgba(255, 255, 255, 0.7);
             font-size: 35px;
+            display: block;
+            max-width: 80%;
         }
     }
 
@@ -131,14 +133,19 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                .scroll-down {
+                    bottom: 40px;
+                }
             }
     
             h1 {
                 font-size: 73px;
-                line-height: 67px;
+                line-height: 80px;
                 
                 span {
                     font-size: 67px;
+                    max-width: 100%;
                 }
             }
     
@@ -148,15 +155,6 @@
     
             button {
                 max-width: 160px;
-            }
-    
-            .arrow {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 80px;
-                height: 50px;
-                
             }
         }
 
