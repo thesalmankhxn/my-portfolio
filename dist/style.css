@@ -13,6 +13,11 @@ h1, h2, h3 {
   font-family: "Titillium Web";
 }
 
+.heading-section {
+  color: #08fdd8;
+  font-size: 1.5rem;
+}
+
 body {
   font-family: "Roboto";
   font-size: 1rem;
@@ -243,12 +248,41 @@ menu .mobile-menu .active {
   background-color: #08fdd8;
 }
 
-.hero .arrow {
+.hero .scroll-down {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 100px;
-  height: 30px;
+}
+
+.hero .scroll-down .mouse {
+  width: 2rem;
+  height: 4rem;
+  border: 2px solid #08fdd8;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.hero .scroll-down .mouse span {
+  width: .5rem;
+  height: .5rem;
+  background-color: #08fdd8;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1.5s linear infinite;
+}
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
 }
 
 @media screen and (min-width: 699px) {
@@ -452,11 +486,6 @@ menu .mobile-menu .active {
   margin-right: .5rem;
 }
 
-.skills .content .left .skill-heading {
-  color: #08fdd8;
-  font-size: 1.5rem;
-}
-
 .skills .content .left .dev {
   padding-bottom: 60px;
 }
@@ -470,8 +499,6 @@ menu .mobile-menu .active {
 }
 
 .skills .content .middle .passion-heading {
-  color: #08fdd8;
-  font-size: 1.5rem;
   padding-bottom: 30px;
 }
 
@@ -491,9 +518,7 @@ menu .mobile-menu .active {
 }
 
 .skills .content .right .language-heading {
-  color: #08fdd8;
   padding-bottom: 30px;
-  font-size: 1.5rem;
 }
 
 .skills .content .right .language {
@@ -535,19 +560,17 @@ menu .mobile-menu .active {
   color: #fff;
 }
 
+.portfolio .project-image {
+  height: 200px;
+}
+
 .portfolio .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.portfolio .container .heading-section {
   padding: 30px 0 112px 0;
-}
-
-.portfolio .container .content {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio .container .content .left .project-image {
-  height: 50vw;
 }
 /*# sourceMappingURL=style.css.map */

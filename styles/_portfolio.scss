@@ -3,28 +3,17 @@
     background-color: $bodyBg;
     color: #fff;
 
-    
+    .project-image {
+        height: 200px;
+    }
 
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 0 112px 0;
-
-        .content {
-
-            display: flex;
-            flex-direction: column;
-
-            .h3 {
-                
-            }
-
-            .left {
-                .project-image {
-                    height: 50vw;
-                }
-            }
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        
+        .heading-section {
+            padding: 30px 0 112px 0;
         }
     }
 }

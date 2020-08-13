@@ -79,7 +79,15 @@
 
                     <button rel="my-work">PORTFOLIO</button>
 
-                    <a href="#about"><img src="images/down-arrow-dark.svg" alt="down arrow" class="arrow"></a>
+                    <a href="#about" class="scroll-down">
+                        <!-- <img src="images/down-arrow-dark.svg" alt="down arrow" class="arrow"> -->
+                        <div class="mouse">
+                            <span></span>
+                        </div>
+                        <div class="arrow">
+                            <span></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="right">
                     <img src="images/hero/feeling_proud_qne1.svg" alt="Feeling Proud" class="hero-image">
@@ -123,7 +131,7 @@
             <div class="content">
                 <div class="left">
                     <div class="dev">
-                        <h3 class="skill-list skill-heading">Skills</h3>
+                        <h3 class="skill-list heading-section">Skills</h3>
                         <h3 class="dev-heading skill-heading-text">Development</h3>
                         <div class="skill-list skill-body-text">
                             <div class="skill-list-item">React</div>
@@ -144,7 +152,7 @@
                     </div>
                 </div>
                 <div class="middle">
-                    <h3 class="passion-heading">Passions</h3>
+                    <h3 class="passion-heading heading-section">Passions</h3>
 
                     <div class="passions-row passion-text"><i class="fas fa-book-open icon"></i>&nbsp;&nbsp; Learning
                     </div>
@@ -154,7 +162,7 @@
                         Sports</div>
                 </div>
                 <div class="right">
-                    <h3 class="language-heading">Languages</h3>
+                    <h3 class="language-heading heading-section">Languages</h3>
                     <div class="language">English, Hindi & Urdu</div>
 
                 </div>
@@ -164,9 +172,27 @@
 
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h3 class="porfolio">Porfolio</h3>
-            <div class="content">
+            <h3 class="heading-section">Porfolio</h3>
+            <div class="glider-contain multiple">
+                <h3>Some things I've built</h3>
 
+                <button class="glider-prev">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+
+                <div class="glider">
+
+                    <div class="project">
+                        <div class="img">
+                            <a href=""><img class="project-image" src="content-images/blistabloc.png" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="glider-next">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
