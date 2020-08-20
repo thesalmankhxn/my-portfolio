@@ -6,3 +6,14 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+let home = document.querySelectorAll('.home-menu');
+
+let about = document.querySelectorAll('.home-menu');
+
+let skills = document.querySelectorAll('.home-menu');
+
+let portfolio = document.querySelectorAll('.home-menu');
+
+let contact = document.querySelectorAll('.home-menu');
+
