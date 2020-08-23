@@ -678,6 +678,11 @@ footer .fab {
   padding: 20px;
 }
 
+footer .resume {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
 footer .owner {
   color: #8d8d8d;
 }
@@ -688,6 +693,9 @@ footer .owner {
   }
   footer .social-link {
     padding-bottom: 50px;
+  }
+  footer .resume {
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

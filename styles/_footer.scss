@@ -14,6 +14,11 @@ footer {
         padding: 20px;
     }
 
+    .resume {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
     .owner {
         color: $lightBlack;
     }
@@ -23,6 +28,10 @@ footer {
 
         .social-link {
             padding-bottom: 50px;
+        }
+
+        .resume {
+            padding-bottom: 20px;
         }
     }
 }
