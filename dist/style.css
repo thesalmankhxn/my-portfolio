@@ -80,6 +80,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #6649b8;
 }
 
+.txt-align-center {
+  text-align: center;
+}
+
 .side-links {
   display: none;
 }
@@ -559,9 +563,9 @@ menu .mobile-menu .active {
 }
 
 .portfolio {
-  height: 100vh;
   background-color: #1d1d1d;
   color: #fff;
+  padding-bottom: 60px;
 }
 
 .portfolio .container {
@@ -573,6 +577,91 @@ menu .mobile-menu .active {
 .portfolio .container .heading-section {
   padding: 30px 0 62px 0;
   font-size: 2rem !important;
+}
+
+.portfolio .heading-h3 {
+  padding-bottom: 60px;
+}
+
+.portfolio button {
+  margin-top: 20px;
+  color: #08fdd8;
+  background-color: transparent;
+  padding: 10px 15px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  border: 2px solid #08fdd8;
+  outline: none;
+  cursor: pointer;
+}
+
+.portfolio button:hover {
+  border: 2px solid #08fdd8;
+  color: #1d1d1d;
+  outline: none;
+  background-color: #08fdd8;
+}
+
+.portfolio .project-container .project {
+  background: #444;
+  padding: 30px 10px 23px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.portfolio .project-container .project-heading {
+  padding-bottom: 10px;
+}
+
+.portfolio .project-container .project-image {
+  height: 100%;
+  width: calc(100vw - 100px);
+  cursor: pointer;
+}
+
+.portfolio .project-container .description {
+  padding: 10px 0 0 0;
+  font-size: 1rem;
+  font-style: "Roboto";
+}
+
+.portfolio .project-container .tech-stack {
+  color: rgba(255, 255, 255, 0.8);
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0px 10px;
+  white-space: nowrap;
+}
+
+.portfolio .project-container .tech-stack li {
+  font-size: 13px;
+  margin-right: 20px;
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: 699px) {
+  .portfolio .project-container {
+    max-width: 500px;
+  }
+  .portfolio .project-container .project-image {
+    width: calc(500px - 20px);
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .portfolio .project-container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+  .portfolio .project-container .project {
+    max-width: 500px;
+  }
+  .portfolio .project-container .project-image {
+    width: calc(500px - 20px);
+  }
 }
 
 .contact {
