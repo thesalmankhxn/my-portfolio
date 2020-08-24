@@ -564,10 +564,6 @@ menu .mobile-menu .active {
   color: #fff;
 }
 
-.portfolio .project-image {
-  height: 200px;
-}
-
 .portfolio .container {
   display: grid;
   justify-items: center;
@@ -575,7 +571,7 @@ menu .mobile-menu .active {
 }
 
 .portfolio .container .heading-section {
-  padding: 30px 0 112px 0;
+  padding: 30px 0 62px 0;
   font-size: 2rem !important;
 }
 
@@ -659,6 +655,12 @@ menu .mobile-menu .active {
   color: #1d1d1d;
   outline: none;
   background-color: #08fdd8;
+}
+
+@media screen and (min-width: 999px) {
+  .contact .container {
+    padding-bottom: 130px;
+  }
 }
 
 footer {

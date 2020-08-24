@@ -80,6 +80,10 @@
                 }
             }
         }
+
+        @include breakpoint(large) {
+            padding-bottom: 130px;
+        }
     }
 
 
