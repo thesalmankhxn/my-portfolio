@@ -80,11 +80,7 @@
                 }
             }
 
-            .captcha {
-                display: flex;
-                justify-content: center;
-                padding: 20px;
-            }
+           
         }
 
         @include breakpoint(large) {
@@ -92,5 +88,10 @@
         }
     }
 
+    .captcha {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
 
 }
