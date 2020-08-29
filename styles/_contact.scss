@@ -80,18 +80,21 @@
                 }
             }
 
-           
+            .captcha {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            }
         }
 
         @include breakpoint(large) {
             padding-bottom: 130px;
         }
     }
+}
 
-    .captcha {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
-
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
