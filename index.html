@@ -281,12 +281,13 @@
         <div class="container">
             <h2 class="section-title heading-section">Contact</h2>
             <div class="contact-container">
-                <form action="post" class="contact-form">
+                <form name="contact" action="POST" data-netlify="true" class="contact-form">
                     <p class="contact-label">Have a question or Want to work together?</p>
-                    <input type="text" placeholder="Name" class="contact-input" required>
-                    <input type="mail" placeholder="Email" class="contact-input" required>
-                    <textarea placeholder="Message" class="message" required></textarea>
-                    <input type="button" value="Submit" class="contact-submit">
+                    <input type="text" name="name" placeholder="Name" class="contact-input" required>
+                    <input type="mail" name="email" placeholder="Email" class="contact-input" required>
+                    <textarea name="message" placeholder="Message" class="message" required></textarea>
+                    <div data-netlify-recaptcha="true" ></div>
+                    <input type="submit" value="Submit" class="contact-submit">
                 </form>
             </div>
         </div>
