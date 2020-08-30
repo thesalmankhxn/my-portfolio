@@ -114,6 +114,10 @@ menu .mobile-menu {
   align-items: center;
 }
 
+menu .mobile-menu .menu-btn {
+  font-size: 19px;
+}
+
 menu .mobile-menu a {
   color: #ffffffa6;
   text-align: center;

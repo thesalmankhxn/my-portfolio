@@ -26,6 +26,10 @@ menu{
         grid-template-rows: 50px;
         gap: 10px;
         align-items: center;
+
+        .menu-btn {
+            font-size: 19px;
+        }
     
         a {
             color: #ffffffa6;
