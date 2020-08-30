@@ -116,6 +116,8 @@ menu{
     
         li {
             list-style: none;
+
+            font-size: 18px;
     
             a {
                 display: inline-block;
@@ -126,11 +128,6 @@ menu{
                 text-decoration: none;
                 transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
                 padding: 10px;
-
-                // i {
-                //     height: 30px;
-                //     width: 30px;
-                // }
             }
         }
     

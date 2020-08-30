@@ -194,6 +194,7 @@ menu .mobile-menu .active {
   }
   .side-links li {
     list-style: none;
+    font-size: 18px;
   }
   .side-links li a {
     display: inline-block;
