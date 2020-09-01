@@ -28,7 +28,7 @@ menu{
         align-items: center;
 
         .menu-btn {
-            font-size: 19px;
+            font-size: 1.07rem;
         }
     
         a {
@@ -98,7 +98,6 @@ menu{
 
     .side-links {
         display: block;
-        // width: 40px;
         position: fixed;
         bottom: 0px;
         right: 40px;
@@ -116,7 +115,6 @@ menu{
     
         li {
             list-style: none;
-
             font-size: 18px;
     
             a {
