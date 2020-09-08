@@ -7,5 +7,8 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+// loading animation
 
+let spinnerWrap = document.querySelector('.spinner-wrapper');
 
+window.addEventListener('load', () => spinnerWrap.parentElement.removeChild(spinnerWrap));
