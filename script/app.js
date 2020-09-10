@@ -9,6 +9,6 @@ function myFunction() {
 
 // loading animation
 
-let spinnerWrap = document.querySelector('.spinner-wrapper');
+let spinner = document.querySelector('.spinner-wrapper');
 
-window.addEventListener('load', () => spinnerWrap.parentElement.removeChild(spinnerWrap));
+window.addEventListener('load', () => spinner.parentElement.removeChild(spinner));
