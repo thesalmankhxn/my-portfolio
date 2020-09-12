@@ -7,8 +7,19 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-// loading animation
+// loading animation START
 
 let spinner = document.querySelector('.spinner-wrapper');
 
 window.addEventListener('load', () => spinner.parentElement.removeChild(spinner));
+
+// loading animation END
+
+
+// smooth scroll START
+
+const scroll = new SmoothScroll('a[href*="#"]',{
+  speed: 800
+});
+
+// smooth scroll END
