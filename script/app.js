@@ -19,7 +19,7 @@ window.addEventListener('load', () => spinner.parentElement.removeChild(spinner)
 // smooth scroll START
 
 const scroll = new SmoothScroll('a[href*="#"]',{
-  speed: 800
+  speed: 1000
 });
 
 // smooth scroll END
