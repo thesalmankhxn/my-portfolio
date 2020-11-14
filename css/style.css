@@ -541,11 +541,11 @@ menu .mobile-menu .active {
   height: 50px;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.7);
-  padding: 0 .25rem;
+  padding: 0 0.25rem;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .skills .content .left .dev {
@@ -607,6 +607,9 @@ menu .mobile-menu .active {
   }
   .skills .content .left {
     grid-column: 2/6;
+  }
+  .skills .content .left .skill-list {
+    max-width: 350px;
   }
   .skills .content .middle {
     grid-column: 7/10;
