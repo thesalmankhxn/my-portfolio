@@ -467,7 +467,7 @@ menu .mobile-menu .active {
     transform: translateX(-50%);
   }
   .about .container {
-    padding: 128px 0;
+    padding: 128px 0 64px 0;
     margin-top: 10%;
   }
   .about .container .content {
