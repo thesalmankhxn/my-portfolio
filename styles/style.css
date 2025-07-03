@@ -3,17 +3,13 @@ html {
   font-size: 100%;
 }
 
-*,
-*::after,
-*:before {
+*, *::after, *:before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Titillium Web";
 }
 
@@ -115,7 +111,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
-  animation: spin 0.5s infinite linear;
+  animation: spin .5s infinite linear;
 }
 
 .spinner:after {
@@ -181,9 +177,7 @@ menu .mobile-menu a:hover {
   filter: grayscale(0) opacity(1);
 }
 
-menu .mobile-menu a:hover,
-menu .mobile-menu a:active,
-menu .mobile-menu a:focus {
+menu .mobile-menu a:hover, menu .mobile-menu a:active, menu .mobile-menu a:focus {
   color: #08fdd8;
   font-family: "Roboto";
   text-decoration: none;
@@ -206,6 +200,7 @@ menu .mobile-menu .active {
   menu .logo {
     display: block;
     background-color: #000;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -332,13 +327,13 @@ menu .mobile-menu .active {
   height: 4rem;
   border: 2px solid #08fdd8;
   border-radius: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   display: flex;
 }
 
 .hero .scroll-down .mouse span {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: .5rem;
+  height: .5rem;
   background-color: #08fdd8;
   display: block;
   border-radius: 50%;
@@ -627,47 +622,34 @@ menu .mobile-menu .active {
 .portfolio {
   background-color: #1d1d1d;
   color: #fff;
-  padding: 80px 0 100px 0;
+  padding-bottom: 60px;
 }
 
 .portfolio .container {
   display: grid;
   justify-items: center;
   align-content: center;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 .portfolio .container .heading-section {
-  padding: 0 0 80px 0;
-  font-size: 2.5rem !important;
-  text-align: center;
-  letter-spacing: 1px;
+  padding: 30px 0 62px 0;
+  font-size: 2rem !important;
 }
 
 .portfolio .heading-h3 {
-  padding-bottom: 80px;
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+  padding-bottom: 60px;
 }
 
 .portfolio button {
-  margin-top: 40px;
+  margin-top: 20px;
   color: #08fdd8;
   background-color: transparent;
-  padding: 15px 30px;
-  font-size: 14px;
-  letter-spacing: 2px;
+  padding: 10px 15px;
+  font-size: 13px;
+  letter-spacing: 4px;
   border: 2px solid #08fdd8;
   outline: none;
   cursor: pointer;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
 }
 
 .portfolio button:hover {
@@ -675,71 +657,29 @@ menu .mobile-menu .active {
   color: #1d1d1d;
   outline: none;
   background-color: #08fdd8;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(8, 253, 216, 0.3);
 }
 
 .portfolio .project-container .project {
-  background: #2a2a2a;
-  padding: 0;
-  border-radius: 16px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-}
-
-.portfolio .project-container .project:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  border-color: rgba(8, 253, 216, 0.2);
+  background: #444;
+  padding: 30px 10px 23px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .portfolio .project-container .project-heading {
-  padding: 30px 30px 20px 30px;
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0;
-  position: relative;
-  letter-spacing: 0.5px;
-}
-
-.portfolio .project-container .project-heading::after {
-  content: "";
-  position: absolute;
-  bottom: 15px;
-  left: 30px;
-  width: 50px;
-  height: 3px;
-  background: linear-gradient(90deg, #08fdd8, transparent);
-  border-radius: 2px;
+  padding-bottom: 10px;
 }
 
 .portfolio .project-container .project-image {
   height: 100%;
-  width: 100%;
+  width: calc(100vw - 100px);
   cursor: pointer;
-  border-radius: 0;
-  transition: transform 0.4s ease;
-  display: block;
-}
-
-.portfolio .project-container .project-image:hover {
-  transform: scale(1.03);
 }
 
 .portfolio .project-container .description {
-  padding: 0 30px 25px 30px;
+  padding: 10px 0 0 0;
   font-size: 1rem;
-  font-family: "Roboto";
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0;
-  font-weight: 300;
+  font-style: "Roboto";
 }
 
 .portfolio .project-container .tech-stack {
@@ -747,53 +687,37 @@ menu .mobile-menu .active {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 30px 30px 30px;
+  margin: 25px 0px 10px;
   white-space: nowrap;
-  gap: 10px;
 }
 
 .portfolio .project-container .tech-stack li {
-  font-size: 11px;
-  font-weight: 500;
-  padding: 8px 16px;
-  background: rgba(8, 253, 216, 0.1);
-  color: #08fdd8;
-  border-radius: 25px;
-  box-shadow: 0 2px 8px rgba(8, 253, 216, 0.1);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(8, 253, 216, 0.2);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.portfolio .project-container .tech-stack li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(8, 253, 216, 0.2);
-  background: rgba(8, 253, 216, 0.15);
-  border-color: rgba(8, 253, 216, 0.4);
+  font-size: 13px;
+  margin-right: 20px;
+  margin-bottom: 7px;
 }
 
 @media screen and (min-width: 699px) {
   .portfolio .project-container {
-    max-width: 700px;
+    max-width: 500px;
   }
   .portfolio .project-container .project-image {
-    width: 100%;
+    width: calc(500px - 20px);
   }
 }
 
 @media screen and (min-width: 999px) {
   .portfolio .project-container {
-    max-width: 1300px;
+    max-width: 1100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
   }
   .portfolio .project-container .project {
-    max-width: 600px;
+    max-width: 500px;
   }
   .portfolio .project-container .project-image {
-    width: 100%;
+    width: calc(500px - 20px);
   }
 }
 
