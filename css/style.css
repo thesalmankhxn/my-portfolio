@@ -627,7 +627,7 @@ menu .mobile-menu .active {
 .portfolio {
   background-color: #1d1d1d;
   color: #fff;
-  padding: 80px 0 100px 0;
+  padding: 60px 0 80px 0;
 }
 
 .portfolio .container {
@@ -639,19 +639,19 @@ menu .mobile-menu .active {
 }
 
 .portfolio .container .heading-section {
-  padding: 0 0 80px 0;
-  font-size: 2.5rem !important;
+  padding: 0 0 60px 0;
+  font-size: 2.2rem !important;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .portfolio .heading-h3 {
-  padding-bottom: 80px;
-  font-size: 1.2rem;
+  padding-bottom: 60px;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-weight: 300;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .portfolio button {
@@ -666,8 +666,9 @@ menu .mobile-menu .active {
   cursor: pointer;
   border-radius: 8px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
   text-transform: uppercase;
+  will-change: transform;
 }
 
 .portfolio button:hover {
@@ -675,26 +676,25 @@ menu .mobile-menu .active {
   color: #1d1d1d;
   outline: none;
   background-color: #08fdd8;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(8, 253, 216, 0.3);
+  transform: translateY(-1px);
 }
 
 .portfolio .project-container .project {
   background: #2a2a2a;
   padding: 0;
-  border-radius: 16px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
+  will-change: transform;
 }
 
 .portfolio .project-container .project:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   border-color: rgba(8, 253, 216, 0.2);
 }
 
@@ -724,12 +724,13 @@ menu .mobile-menu .active {
   width: 100%;
   cursor: pointer;
   border-radius: 0;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
   display: block;
+  will-change: transform;
 }
 
 .portfolio .project-container .project-image:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .portfolio .project-container .description {
@@ -758,17 +759,17 @@ menu .mobile-menu .active {
   padding: 8px 16px;
   background: rgba(8, 253, 216, 0.1);
   color: #08fdd8;
-  border-radius: 25px;
-  box-shadow: 0 2px 8px rgba(8, 253, 216, 0.1);
-  transition: all 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(8, 253, 216, 0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
   border: 1px solid rgba(8, 253, 216, 0.2);
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  will-change: transform;
 }
 
 .portfolio .project-container .tech-stack li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(8, 253, 216, 0.2);
+  transform: translateY(-1px);
   background: rgba(8, 253, 216, 0.15);
   border-color: rgba(8, 253, 216, 0.4);
 }
